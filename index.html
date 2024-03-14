@@ -13,25 +13,13 @@
             background-color: #000000; /* Black background */
             color: #ffffff; /* White text */
             display: flex;
-            justify-content: bottom;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-
-        @media only screen and (max-width: 600px) {
-            .animated-text {
-                font-size: 1.5rem; /* Adjust font size for smaller screens */
-            }
+            flex-direction: column;
+            min-height: 100vh; /* Set minimum height to viewport height */
         }
 
         /* Navbar styles */
         nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color:#FF0000; /* Dark background color */
+            background-color: #FF0000; /* Dark background color */
             padding: 10px 0; /* Add padding top and bottom */
         }
 
@@ -52,23 +40,27 @@
         /* Footer Styles */
         footer {
             background-color: #000000; /* Dark background color */
-            position: down bottom;
             color: #fff; /* White text */
             text-align: center;
             padding: 20px;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+            margin-top: auto; /* Push footer to the bottom */
         }
     </style>
 </head>
 <body>
     <!-- Navbar -->
     <nav>
-        <a href="https://vcdeals24.github.io/Cash-On-Delivery/" style="background-color: #FF0000; /* Blue background color */">HOME</a>
+        <a href="https://vcdeals24.github.io/Cash-On-Delivery/" style="background-color: #FF0000;">HOME</a>
     </nav>
+
+    <!-- Content -->
+    <main>
+        <!-- Your content goes here -->
+    </main>
 
     <!-- Footer -->
     <footer>
         © 2024 VCdeals24. All rights reserved.
     </footer>
 </body>
-  </html>
+</html>
